@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- <link rel="serviceWorker.js" href="serviceWorker.js"> -->
+<!-- ios support -->
+<link rel="apple-touch-icon" href="assets/icons/icon-72x72.png"/>
+<link rel="apple-touch-icon" href="assets/icons/icon-96x96.png"/>
+<link rel="apple-touch-icon" href="assets/icons/icon-128x128.png"/>
+<link rel="apple-touch-icon" href="assets/icons/icon-144x144.png"/>
+<link rel="apple-touch-icon" href="assets/icons/icon-152x152.png"/>
+<link rel="apple-touch-icon" href="assets/icons/icon-192x192.png"/>
+<link rel="apple-touch-icon" href="assets/icons/icon-384x384.png"/>
+<link rel="apple-touch-icon" href="assets/icons/icon-512x512.png"/>
+<meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+<meta name="theme-color" content="#db4938" />
+</head>
+<body>
+    <!-- <form onsubmit="getWeather(); return false">
+        <input type="text" name="" id="inp-weather">
+        <button type="submit">check</button>
+    </form> -->
+
+  <div class="container">
+    <div class="search">
+        <input type="text" placeholder ="   enter city name" id="inp-weather">
+        <button onclick="getWeather()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="weather">
+        <img class="weather-icon" src="./img/rain.png" alt="">
+        <h1 class="celcius">0°c</h1>
+        <h2 class="city">Karachi</h2>
+
+        <div class="detail">
+        <div class="humadity">
+            <i class="fa-solid fa-water"></i>
+        <div class="info-humadity">
+            <span class="humadityP">0%</span>
+        </div>
+        <p>Humadity</p>
+    </div>
+    
+<div class="wind">
+    <i class="fa-solid fa-wind"></i>
+    <div class="info-wind">
+        <span class="windS">0km/h</span>
+    </div>
+    <p>Wind Speed</p>
+</div>
+</div>
+
+<!-- <div>
+    <img class="weather-icon" src="" alt="Weather Icon">
+</div> -->
+
+
+</div>
+<div class="notFound">
+    <img src="img/404.png"/>
+</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+</html>
